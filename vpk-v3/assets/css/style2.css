@@ -1,0 +1,365 @@
+@charset "UTF-8";
+/* ====== Table of content Start =====*/
+/*
+Project Name: VPK Meter
+File        : Custom CSS File
+*/
+/* ====== Table of content End =====*/
+/* Default transition */
+/* body {
+  marging: auto;
+  margin: 0px 15px;
+  background-color: #16203A;
+} */
+.magic-text {
+    margin: -25px 0px 30px 0px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #FC6E6E;
+    color: white;
+    border-radius: 25px;
+}
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: #16203A;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0px 15px;
+}
+
+.step {
+  width: 15rem;
+  height: 0.75rem;
+  display: inline-block;
+}
+.step:not(:last-child) {
+  margin-right: 3rem;
+}
+.step.active {
+  background-color: #f95b41 !important;
+}
+.step.finish {
+  background-color: #2a6997 !important;
+}
+
+.multisteps_form_panel {
+  display: none;
+}
+
+.question_number {
+  padding-top: 2rem;
+  color: #fb5858;
+  margin-top: -20px;
+  font-size: 22px;
+}
+
+span {
+  color: #4cbd86;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  -webkit-transition: 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+h1 {
+  color: #fff;
+  font-size: 4.204375rem;
+}
+
+.form_items li {
+	display:flex;
+  width: 100%;
+  color: #000a38;
+  font-size: 1.3125rem;
+  padding: 0.9375rem 3rem;
+  margin-top: 1.25rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.op-label
+{
+
+    align-items: center;
+    margin-left: 10px;	
+}
+@media only screen and (max-width: 475px) {
+  .op-label {
+    width: 140px;
+  }
+  
+}
+
+.op-radio
+{
+	height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+
+.rb
+{
+	display: flex;
+    align-items: center;
+}
+
+.check_mark_img img {
+    width: 20rem;
+    height: auto;
+}
+
+.mt-8
+{
+	margin-top: 8rem;
+}
+
+.form_items li label {
+  cursor: pointer;
+}
+
+
+.f_btn {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 800;
+  padding: 0.9375rem 1.5625rem;
+  outline: none;
+  background-color: #C44D39;
+  margin-right: 0.625rem;
+  margin-bottom: 2rem;
+  -webkit-transition: 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  transition: 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.f_btn:hover {
+  color: #ffc533;
+  background-color: #ffffff;
+}
+
+body {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.65;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Jost", sans-serif;
+  background-color: #ffffff;
+}
+
+a,
+button,
+input {
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover,
+button:hover,
+input:hover {
+  text-decoration: none;
+}
+a:focus,
+button:focus,
+input:focus {
+  outline: none;
+}
+
+ul > li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.animate_50ms {
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms;
+}
+
+.animate_100ms {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.animate_150ms {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+
+.animate_200ms {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.animate_250ms {
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1510px;
+  }
+}
+/* ==================================================
+*   01 - media screen and (max-width: 1500px)
+*   02 - media screen and (max-width: 1400px)
+*	03 - media screen and (max-width: 1200px)
+*	04 - media screen and (max-width: 992px)
+*	05 - media screen and (max-width: 768px)
+*	06 - media screen and (max-width: 576px)
+*	07 - media screen and (max-width: 380px)
+*   XX-Large devices (larger desktops)
+*   No media query since the xxl breakpoint has no upper bound on its width
+================================================== */
+@media screen and (max-width: 1499.98px) {
+  .step_progress .step {
+    width: 12rem;
+  }
+  .step_progress .step:not(:last-child) {
+    margin-right: 2.8rem;
+  }
+}
+@media screen and (max-width: 1399.98px) {
+  .step_progress .step {
+   width: 28px;
+    height: 28px;
+    font-size: 18px;
+  }
+  .step_progress .step:not(:last-child) {
+   margin-right: 0.8rem;
+  }
+
+  span {
+    font-size: 1.5rem;
+    padding-bottom: 0.8rem;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .form_items li {
+    font-size: 1.2rem;
+    padding: 0.8375rem 1rem;
+  }
+
+  .f_btn {
+    font-size: 1.18rem;
+    font-weight: 700;
+    padding: 0.7375rem 1.3625rem;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .step_progress .step {
+    width: 10rem;
+  }
+  .step_progress .step:not(:last-child) {
+    margin-right: 2.6rem;
+  }
+
+  span {
+    font-size: 1.15rem;
+    padding-bottom: 0.6rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .form_items li {
+    font-size: 1rem;
+    padding: 0.7375rem 0rem;
+  }
+
+  .f_btn {
+    font-size: 1.15rem;
+    font-weight: 700;
+    padding: 0.8375rem 1.4625rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .step_progress .step {
+    width: 6.5rem;
+  }
+  .step_progress .step:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  span {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+
+  .form_items li {
+    font-size: 1rem;
+  }
+
+  .f_btn {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.7375rem 1.3625rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .step_progress .step {
+    width: 5rem;
+  }
+  .step_progress .step:not(:last-child) {
+    margin-right: 4px;
+  }
+
+  span {
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  .form_items li {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .f_btn {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.5375rem 1.1625rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  span {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  .f_btn {
+    font-size: 12px;
+    padding: 0.5375rem 1.1625rem;
+  }
+}
+
+hr {
+  border-style: none;
+  border-top: 10px dotted #ef6f66;
+  background-color: rgba(255, 255, 255, 0);
+}
